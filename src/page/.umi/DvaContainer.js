@@ -10,6 +10,7 @@ let app = dva({
 window.g_app = app;
 app.use(createLoading());
 
+app.model({ namespace: 'cubeSelectForm', ...(require('C:/Users/ylc/frtb-ui/src/model/cubeSelectForm.js').default) });
 app.model({ namespace: 'puzzlecards', ...(require('C:/Users/ylc/frtb-ui/src/model/puzzlecards.js').default) });
 
 class DvaContainer extends Component {

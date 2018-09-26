@@ -17,6 +17,11 @@ let routes = [
         "exact": true
       },
       {
+        "path": "/cubeSelectForm",
+        "component": require('../cubeSelectForm').default,
+        "exact": true
+      },
+      {
         "component": () => React.createElement(require('C:/Users/ylc/frtb-ui/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/page', hasRoutesInConfig: true })
       }
     ]
